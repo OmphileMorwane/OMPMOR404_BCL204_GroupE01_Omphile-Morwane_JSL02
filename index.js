@@ -38,6 +38,8 @@ const addNewGoal = () => {
   const newGoal = document.createElement("li");
   newGoal.textContent = goalInput;
   goalList.appendChild(newGoal);
+
+  document.querySelector("#goalInput").value = ""; //Code to clear input field
 };
 
 // Add event listener to the goal submit button
