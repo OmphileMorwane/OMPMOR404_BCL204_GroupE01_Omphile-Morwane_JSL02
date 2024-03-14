@@ -24,9 +24,10 @@ const addNewGoal = () => {
 
   //Code to check for duplicates.
   const existingGoals = goalList.querySelectorAll("li");
+  //This code prevents dupplicates.
   for (let goal of existingGoals) {
     if (goal.textContent.trim() === goalInput.trim()) {
-      alert("Goal already exist! Please enter a different goal");
+      alert("Goal already exist!");
       return;
     }
   }
