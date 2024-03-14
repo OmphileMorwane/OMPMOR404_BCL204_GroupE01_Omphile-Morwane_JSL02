@@ -28,7 +28,7 @@ const addNewGoal = () => {
   for (let goal of existingGoals) {
     if (goal.textContent.trim() === goalInput.trim()) {
       alert("Goal already exist!");
-      return;
+      return; //Terminate function execution when duplicate is found.
     }
   }
 
